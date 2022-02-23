@@ -1,0 +1,9 @@
+import pybase (add, mul, sub, div, id)
+
+
+test x = add x x
+
+er x = mul x x
+
+export test
+export er

@@ -1,0 +1,6 @@
+import pybase (add, mul, div, sub)
+
+test :: Num -> Num
+test x = add x 1
+
+export test

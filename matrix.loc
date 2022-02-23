@@ -1,0 +1,43 @@
+import pybase (add, mul, sub, div, id)
+
+source py from "matrix.py" ("Matrix" as Matrix)
+source py from "test_matrix.py" ("get_row")
+source py from "vector.py" ("Vector", "scale", "get", "add")
+
+-- Vector Object and its function
+object (Vector a) = Vector {vector :: [Float]}
+object py (Vector a) = "Vector" {vector :: ["float"]}
+
+
+scale :: Vector Float -> Float -> Vector Float
+scale py :: "Vector" "float" -> "float" -> "Vector" "float"
+
+get :: Vector Float -> Float -> Float
+get py :: "Vector" "float" -> "float" -> "float"
+
+add :: Vector Float -> Vector Float -> Vector Float
+add py :: "Vector" "float" -> "Vector" "float" -> "Vector" "float"
+
+
+-- Matrix Object and its function
+object (Matrix a) = Matrix {rows :: Int, columns :: Int, matrix :: [[Float]]}
+object py (Matrix a) = "Matrix" {rows :: "int", columns :: "int", matrix :: [["float"]]}
+
+
+get_row :: Matrix Float -> Int -> List Float
+get_row py :: "Matrix" "float" -> "int" -> "list" "float"
+
+get_column :: Matrix Float -> Int -> List Float
+get_column py :: "Matrix" "float" -> "int" -> "list" "float"
+
+place_element :: Matrix Float -> Float -> Int -> Int -> Float
+place_element py :: "Matrix" "float" -> "float" -> "int" -> "int" -> "float"
+
+place_row :: Matrix Float -> [[Float]] -> Int -> [[Float]]
+place_row py :: "Matrix" "Float" -> [["float"]] -> "int" -> [["float"]]
+
+place_column :: Matrix Float -> [[Float]] -> Int -> [[Float]]
+place_column py :: "Matrix" "Float" -> [["float"]] -> "int" -> [["float"]]
+
+
+export get_row

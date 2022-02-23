@@ -1,0 +1,8 @@
+import cppbase (add, mul)
+
+source py from "serial_test.py" ("test")
+
+test :: Int -> List Int
+test py :: "int" -> "list" "int"
+
+export test

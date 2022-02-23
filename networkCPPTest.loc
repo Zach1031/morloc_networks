@@ -1,0 +1,26 @@
+source Cpp from "activation_functions.cpp" ("step", "sigmoid", "sigmoid_prime", "tanh", "tanh_prime", "relu")
+
+step :: Num -> Num
+step cpp :: "double" -> "double"
+
+sigmoid :: Num -> Num
+sigmoid cpp :: "double" -> "double"
+
+sigmoid_prime :: Num -> Num
+sigmoid_prime cpp :: "double" -> "double"
+
+tanh :: Num -> Num
+tanh cpp :: "double" -> "double"
+
+tanh_prime :: Num -> Num
+tanh_prime cpp :: "double" -> "double"
+
+relu :: Num -> Num
+relu cpp :: "double" -> "double"
+
+export step
+export sigmoid
+export sigmoid_prime
+export tanh
+export tanh_prime
+export relu

@@ -1,0 +1,9 @@
+import pybase (add, mul, div, sub)
+
+source py from "ml_functions.py" ("Network")
+
+object (Network a) = Network {size :: Int}
+object py (Network a) = "Network" {size :: "int"}
+
+foo :: Person Int -> Person Int
+foo py :: Person "int" -> Person "int"

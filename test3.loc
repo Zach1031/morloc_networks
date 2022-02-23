@@ -1,0 +1,12 @@
+import pybase (add)
+
+source py from "test.py" ("int_list")
+
+export foo
+export int_list
+
+foo :: [Int] -> [Int]
+foo a = a
+
+int_list :: [Int] -> [Int]
+int_list py :: ["int"] -> ["int"]

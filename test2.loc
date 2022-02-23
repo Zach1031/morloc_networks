@@ -1,0 +1,10 @@
+source py from "initialization.py" ("gaussian_biases", "gaussian_weights")
+
+gaussian_biases :: Int -> List a
+gaussian_biases Py :: "int" -> "list" a
+
+gaussian_weights :: Int -> List a
+gaussian_weights Py :: "int" -> "list" a
+
+export gaussian_biases
+export gaussian_weights

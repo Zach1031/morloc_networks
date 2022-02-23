@@ -1,0 +1,55 @@
+import pybase (add, mul, div, sub)
+
+source py from "activation_functions.py" ("step", "sigmoid", "sigmoid_prime", "tanh", "tanh_prime", "relu")
+
+source py from "initialization.py" ("gaussian_biases", "gaussian_weights", "glorot_gaussian_biases", "glorot_gaussian_weights", "glorot_uniform_biases", "glorot_uniform_biases")
+
+-- activation functions
+step :: Num -> Num
+step Py :: "float" -> "float"
+
+sigmoid :: Num -> Num
+sigmoid Py :: "float" -> "float"
+
+sigmoid_prime :: Num -> Num
+sigmoid_prime py :: "float" -> "float"
+
+sigmoid :: Num -> Num
+sigmoid Py :: "float" -> "float"
+
+tanh :: Num -> Num
+tanh Py :: "float" -> "float"
+
+tanh_prime :: Num -> Num
+tanh_prime Py :: "float" -> "float"
+
+relu :: Num -> Num
+relu Py :: "float" -> "float"
+
+
+
+
+-- initialization functions
+gaussian_biases :: List Int -> List Float
+gaussian_biases Py :: "list" "int" -> "list" "float"
+
+gaussian_weights :: List Int -> List Float
+gaussian_weights Py :: "list" "int" -> "list" "float"
+
+
+glorot_gaussian_biases :: List Int -> List Float
+glorot_gaussian_biases Py :: "list" "int" -> "list" "float"
+
+glorot_gaussian_weights :: List Int -> List Float
+glorot_gaussian_weights Py :: "list" "int" -> "list" "float"
+
+
+glorot_uniform_biases :: List Int -> List Float
+glorot_uniform_biases Py :: "list" "int" -> "list" "float"
+
+glorot_uniform_weights :: List Int -> List Float
+glorot_uniform_weights Py :: "list" "int" -> "list" "float"
+
+
+export tanh
+export tanh_prime

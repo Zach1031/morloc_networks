@@ -1,0 +1,16 @@
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# Setting PATH for Python 3.5
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+PATH=$PATH:/opt/metasploit-framework/bin
+export PATH=$PATH:/opt/metasploit-framework/bin
+export PATH=$PATH:/Users/zachdefazio/.local/bin
+export PATH=$PATH:/Users/zachdefazio/node_modules/geckodriver/bin 
+
+alias ghci="stack ghci" 

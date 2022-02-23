@@ -1,0 +1,11 @@
+import pybase (add, mul, div, sub)
+
+source py from "activation_functions.py" ("sigmoid", "sigmoid_prime", "feedforward")
+
+sigmoid :: Num -> Num
+sigmoid Py :: "float" -> "float"
+
+sigmoid_prime :: Num -> Num
+sigmoid_prime Py :: "float" -> "float"
+
+export sigmoid

@@ -1,0 +1,7 @@
+
+source cpp from "serial_test.cpp" ("test")
+
+test :: Int -> List Int
+test cpp :: "int" -> "std::vector<$1>" "int"
+
+export test
